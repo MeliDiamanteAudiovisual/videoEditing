@@ -26,9 +26,9 @@ function CardsContainer() {
         img={photo1}
         title="Titulo Video"
         description="Breve descripcion video"
-        video={`${baseURL}1-peliargentina.mp4`}
+        video={baseURL + "1-peliargentina.mp4"}
       />
-      <VideoCard
+      {/* <VideoCard
         img={photo2}
         title="Titulo Video"
         description="Breve descripcion video"
@@ -69,7 +69,7 @@ function CardsContainer() {
         title="Titulo Video"
         description="Breve descripcion video"
         video={video8}
-      />
+      /> */}
     </div>
   );
 }
