@@ -68,16 +68,12 @@
   top: 0;
 }
 
-.video-card {
-  height: 35vh;
-  width: 350px;
-  background-color: #ffcd4b;
-  margin: 10px;
-}
-
 /* ***HOVER ANIMATION*** */
 
 .video-card {
+  height: 200px;
+  width: 350px;
+  margin: 10px;
   float: left;
   padding: 0px;
   position: relative;
@@ -99,6 +95,7 @@
   padding: 0px;
   float: left;
   z-index: 0;
+  width: 100%;
 }
 .video-card .caption {
   cursor: pointer;
@@ -119,7 +116,7 @@
 }
 .video-card .blur {
   background-color: #ffcd4b;
-  height: 35vh;
+  height: 200px;
   width: 350px;
   z-index: 5;
   position: absolute;
@@ -134,7 +131,7 @@
   color: #fff;
   position: absolute;
   width: 350px;
-  height: 35vh;
+  height: 200px;
   text-align: center;
   top: 100px;
 }
