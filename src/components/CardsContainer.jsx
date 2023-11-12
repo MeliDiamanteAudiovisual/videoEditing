@@ -26,7 +26,7 @@ function CardsContainer() {
         title="Titulo Video"
         description="Breve descripcion video"
         video={
-          "https://github.com/MeliDiamanteAudiovisual/videoEditing/blob/main/src/assets/videos/1-peliargentina.mp4"
+          "https://github.com/MeliDiamanteAudiovisual/videoEditing/1-peliargentina.mp4"
         }
       />
       {/* <VideoCard
