@@ -23,6 +23,7 @@ function VideoModal({ show, onHide, video }) {
           height="440"
           autoPlay={false}
           controls={true}
+          type="video/mp4"
         ></video>
       </Modal.Body>
       <Modal.Footer></Modal.Footer>
