@@ -1,0 +1,8 @@
+src/assets/videos/1-peliargentina.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/videos/2-herway.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/videos/3-marta.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/videos/4-bakeoff.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/videos/5-siemprereinas.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/videos/6-arteautoexamen.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/videos/7-messimaradona.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/videos/8-swedenvsusa.mp4 filter=lfs diff=lfs merge=lfs -text
