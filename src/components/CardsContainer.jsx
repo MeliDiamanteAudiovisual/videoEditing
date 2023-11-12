@@ -18,6 +18,7 @@ import photo7 from "../assets/images/7-messimaradona.png";
 import photo8 from "../assets/images/8-swdenvsusa.png";
 
 function CardsContainer() {
+  const baseURL = process.env.REACT_APP_PUBLIC_VIDEO_URL;
   return (
     <div className="cards-container">
       <div className="background"></div>
@@ -25,7 +26,7 @@ function CardsContainer() {
         img={photo1}
         title="Titulo Video"
         description="Breve descripcion video"
-        video={video1}
+        video={`${baseURL}1-peliargentina.mp4`}
       />
       <VideoCard
         img={photo2}
