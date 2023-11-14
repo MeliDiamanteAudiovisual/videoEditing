@@ -5,7 +5,7 @@ import { FaEnvelope } from "react-icons/fa";
 
 import "../App.css";
 
-function Header() {
+function Header({ setModalShow }) {
   return (
     <Navbar expand="lg" className="custom-navbar">
       <Navbar.Brand href="#home" className="navbar-text">
@@ -14,7 +14,11 @@ function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link href="#home" className="navbar-text navbar-link">
+          <Nav.Link
+            href="#home"
+            className="navbar-text navbar-link"
+            onClick={() => setModalShow(true)}
+          >
             <FaEnvelope />
           </Nav.Link>
           <Nav.Link

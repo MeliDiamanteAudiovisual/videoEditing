@@ -33,17 +33,28 @@
 }
 
 .blue-bar {
-  color: #0802a3;
+  color: #060271;
   font-weight: 900;
 }
 
 .hero {
+  position: relative;
   height: 55vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #0802a3;
+  background-color: #060271;
   background-blend-mode: lighten;
   filter: brightness(1) opacity(0.7) contrast(105%) blur(0.8px) grayscale(14%);
+}
+
+.hero-heading {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 200px;
+  z-index: 5;
+  color: white;
 }
 
 .main-container {
@@ -134,4 +145,23 @@
   height: 200px;
   text-align: center;
   top: 100px;
+}
+
+.footer-container {
+  width: 100%;
+  height: 20vh;
+  /* background-color: #ff4b91; */
+  margin-top: 10vh;
+}
+
+.footer-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: white !important;
+}
+
+.footer-text {
+  color: white;
+  width: 100%;
+  text-align: center;
 }
