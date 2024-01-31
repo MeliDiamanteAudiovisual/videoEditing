@@ -1,13 +1,4 @@
 import "../App.css";
-import VideoCard from "./VideoCard";
-import video1 from "../assets/videos/1-peliargentina.mp4";
-import video2 from "../assets/videos/2-herway.mp4";
-import video3 from "../assets/videos/3-marta.mp4";
-import video4 from "../assets/videos/4-bakeoff.mp4";
-import video5 from "../assets/videos/5-siemprereinas.mp4";
-import video6 from "../assets/videos/6-arteautoexamen.mp4";
-import video7 from "../assets/videos/7-messimaradona.mp4";
-import video8 from "../assets/videos/8-swedenvsusa.mp4";
 import photo1 from "../assets/images/1-peliargentina.png";
 import photo2 from "../assets/images/2-herway.png";
 import photo3 from "../assets/images/3-marta.png";
@@ -16,24 +7,21 @@ import photo5 from "../assets/images/5-siemprereinas.png";
 import photo6 from "../assets/images/6-arteautoexamen.png";
 import photo7 from "../assets/images/7-messimaradona.png";
 import photo8 from "../assets/images/8-swdenvsusa.png";
+import WistiaPlayer from "./WistiaPlayer";
 
 function CardsContainer() {
   return (
     <div className="cards-container">
       <div className="background"></div>
-      <VideoCard
-        img={photo1}
-        title="Titulo Video"
-        description="Breve descripcion video"
-        video={video1}
-      />
-      <VideoCard
-        img={photo2}
-        title="Titulo Video"
-        description="Breve descripcion video"
-        video={video2}
-      />
-      <VideoCard
+      <WistiaPlayer videoId="vmqmyz1ggt" wrapper="wistia-player-container-1" />
+      <WistiaPlayer videoId="rswf2l0btc" wrapper="wistia-player-container-2" />
+      <WistiaPlayer videoId="ni1uu7ggph" wrapper="wistia-player-container-3" />
+      <WistiaPlayer videoId="fk07u3v8nq" wrapper="wistia-player-container-4" />
+      <WistiaPlayer videoId="w4ymf9hgk1" wrapper="wistia-player-container-5" />
+      <WistiaPlayer videoId="2lxuihnrtr" wrapper="wistia-player-container-6" />
+      <WistiaPlayer videoId="zrqne7cvij" wrapper="wistia-player-container-7" />
+      <WistiaPlayer videoId="2on7yamdp3" wrapper="wistia-player-container-8" />
+      {/* <VideoCard
         img={photo3}
         title="Titulo Video"
         description="Breve descripcion video"
@@ -68,7 +56,7 @@ function CardsContainer() {
         title="Titulo Video"
         description="Breve descripcion video"
         video={video8}
-      />
+      /> */}
     </div>
   );
 }

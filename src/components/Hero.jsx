@@ -1,5 +1,5 @@
-import Photo3 from "../assets/images/photo-1.jpeg";
-import Photo4 from "../assets/images/photo-2.jpeg";
+import Photo1 from "../assets/images/photo-1.png";
+import Photo2 from "../assets/images/photo-2.jpeg";
 import "../App.css";
 
 function Hero() {
@@ -11,11 +11,11 @@ function Hero() {
       </h2>
       <div
         className="hero w-50"
-        style={{ backgroundImage: `url(${Photo3})` }}
+        style={{ backgroundImage: `url(${Photo1})` }}
       ></div>
       <div
         className="hero w-50"
-        style={{ backgroundImage: `url(${Photo4})` }}
+        style={{ backgroundImage: `url(${Photo2})` }}
       ></div>
     </div>
   );
