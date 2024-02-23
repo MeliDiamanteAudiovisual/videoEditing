@@ -19,7 +19,7 @@ function Footer({ setModalShow }) {
       </div>
 
       <h6 className="footer-text mt-3">
-        melidiamante.audiovisual@gmail.com | +54 9 11 30132288
+        melidiamante.audiovisual@gmail.com | +34 672 517 170
       </h6>
     </footer>
   );

@@ -1,5 +1,7 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+
 import { GrLinkedin } from "react-icons/gr";
 import { FaEnvelope } from "react-icons/fa";
 
@@ -8,28 +10,26 @@ import "../App.css";
 function Header({ setModalShow }) {
   return (
     <Navbar expand="lg" className="custom-navbar">
-      <Navbar.Brand href="#home" className="navbar-text">
-        MELINA DIAMANTE <span className="blue-bar">|</span> VIDEO EDITOR
+      <Navbar.Brand href="" className="navbar-text navbar-brand mx-auto">
+        MELINA DIAMANTE <span className="blue-bar">| VIDEO EDITOR</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto">
-          <Nav.Link
-            href="#home"
-            className="navbar-text navbar-link"
-            onClick={() => setModalShow(true)}
-          >
-            <FaEnvelope />
-          </Nav.Link>
-          <Nav.Link
-            href="https://www.linkedin.com/in/melina-diamante-821270126/"
-            target="_blank"
-            className="navbar-text navbar-link"
-          >
-            <GrLinkedin />
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+
+      <Nav className="links-container">
+        <Nav.Link
+          href=""
+          className="navbar-text navbar-link"
+          onClick={() => setModalShow(true)}
+        >
+          <FaEnvelope />
+        </Nav.Link>
+        <Nav.Link
+          href="https://www.linkedin.com/in/melina-diamante-821270126/"
+          target="_blank"
+          className="navbar-text navbar-link"
+        >
+          <GrLinkedin />
+        </Nav.Link>
+      </Nav>
     </Navbar>
   );
 }

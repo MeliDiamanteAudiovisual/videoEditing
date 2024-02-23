@@ -1,21 +1,16 @@
-import Photo1 from "../assets/images/photo-1.png";
-import Photo2 from "../assets/images/photo-2.jpeg";
+import HeroPicture from "../assets/images/hero.jpg";
 import "../App.css";
 
 function Hero() {
   return (
     <div className="d-flex w-100">
       <h2 className="hero-heading">
-        I believe in the experience you can create <br />
-        with video and sound
+        I believe in the experience <br />
+        you can create with video
       </h2>
       <div
-        className="hero w-50"
-        style={{ backgroundImage: `url(${Photo1})` }}
-      ></div>
-      <div
-        className="hero w-50"
-        style={{ backgroundImage: `url(${Photo2})` }}
+        className="hero w-100"
+        style={{ backgroundImage: `url(${HeroPicture})` }}
       ></div>
     </div>
   );

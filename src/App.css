@@ -5,11 +5,19 @@
   color: #ffcd4b;
 } */
 
+@font-face {
+  font-family: Antarctic;
+  src: url("assets/fonts/antarcticanheadline-bold-webfont.woff2")
+      format("woff2"),
+    url("assets/fonts/antarcticanheadline-bold-webfont.woff") format("woff");
+}
+
 .custom-navbar {
   background-color: #ff4b91;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .navbar-nav {
@@ -20,6 +28,7 @@
 
 .navbar-text {
   color: white !important;
+  font-family: Antarctic;
 }
 
 .navbar-link {
@@ -39,14 +48,24 @@
   fill: white;
 }
 
+.navbar-brand {
+  font-size: 40px;
+  margin: 0;
+}
+
 .blue-bar {
-  color: #060271;
-  font-weight: 900;
+  color: #ffcd4b;
+  font-style: normal;
+}
+
+.links-container {
+  position: absolute;
+  right: 0;
 }
 
 .hero {
   position: relative;
-  height: 55vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #060271;
@@ -61,11 +80,13 @@
   position: absolute;
   top: 200px;
   z-index: 5;
-  color: white;
+  color: #ffcd4b;
+  font-family: Antarctic;
+  font-style: italic;
+  font-size: 50px;
 }
 
 .main-container {
-  width: 90%;
   min-height: 30vh;
   margin: auto;
   position: relative;
@@ -90,7 +111,7 @@
 
 .video-card {
   height: 200px;
-  width: 350px;
+  width: 300px;
   margin: 15px;
   float: left;
   padding: 0px;
@@ -98,7 +119,7 @@
   overflow: hidden;
 }
 .caption {
-  width: 350px;
+  width: 300px;
   height: 200px;
   z-index: 4;
 }
@@ -129,6 +150,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
@@ -142,16 +164,12 @@
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-.video-card .caption-text h2 {
-  text-transform: uppercase;
-  font-size: 24px;
-}
+
 .video-card .caption-text {
   color: #fff;
   position: absolute;
-  width: 350px;
+  width: 300px;
   height: 200px;
-  text-align: center;
   top: 100px;
 }
 

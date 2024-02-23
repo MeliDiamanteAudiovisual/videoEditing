@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import "../App.css";
 
-function WistiaPlayer({ videoId, wrapper }) {
+function WistiaPlayer({ videoId, wrapper, title, description }) {
   useEffect(() => {
     // Wistia embed code
     const script1 = document.createElement("script");
@@ -11,12 +12,12 @@ function WistiaPlayer({ videoId, wrapper }) {
     const caption = document.createElement("div");
     caption.classList.add("caption");
     div.innerHTML = `<span class="wistia_embed wistia_async_${videoId}
-    popover=true popoverContent=thumbnail videoFoam=true" style="width:350px;height:200px;">&nbsp;</span>`;
+    popover=true popoverContent=thumbnail videoFoam=true" style="width:300px;height:200px;">&nbsp;</span>`;
     caption.innerHTML = `
 
     <div className="caption-text">
-      <h2>Titulo</h2>
-      <p>description</p>
+      <h2 className="caption-title">${title}</h2>
+      <p>${description}</p>
     </div>
 `;
     const container = document.getElementById(wrapper);
