@@ -12,6 +12,10 @@
     url("assets/fonts/antarcticanheadline-bold-webfont.woff") format("woff");
 }
 
+.w-80 {
+  width: 80%;
+}
+
 .custom-navbar {
   background-color: #ff4b91;
   padding: 5px;
@@ -37,6 +41,7 @@
   display: flex !important;
   justify-content: center;
   align-items: center;
+  font-size: 22px;
 }
 
 .social-links {
@@ -60,7 +65,9 @@
 
 .links-container {
   position: absolute;
-  right: 0;
+  right: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero {
@@ -173,10 +180,65 @@
   top: 100px;
 }
 
+.mr-3 {
+  margin-right: 1rem;
+}
+
+.ml-3 {
+  margin-left: 1rem;
+}
+
+.modal-content {
+  height: 70vh;
+  background-color: #05034a;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 20px 20px 0 20px;
+}
+
+.modal-title {
+  font-family: Antarctic;
+  color: white;
+  font-size: 30px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.form-container {
+  display: flex;
+}
+
+.form-label {
+  width: 100%;
+  color: white;
+}
+
+.form-input {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.submit-btn {
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: none;
+  border: none;
+  font-size: 22px;
+  color: #ff4b91;
+  font-weight: bolder;
+}
+
+.submit-btn:hover {
+  background-color: #ffcd4b;
+}
+
 .footer-container {
   width: 100%;
-  height: 20vh;
-  /* background-color: #ff4b91; */
   margin-top: 10vh;
 }
 
@@ -190,4 +252,14 @@
   color: white;
   width: 100%;
   text-align: center;
+}
+
+.developed {
+  font-size: 10px;
+}
+
+.developer-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffcd4b !important;
 }
